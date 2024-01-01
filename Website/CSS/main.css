@@ -1,0 +1,465 @@
+/*GENEL AYARLAR*/
+@font-face {
+    font-family:'Raleway' ;
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+body{
+
+background-color:white;
+color:darkblue;
+font: 14px/28px;
+font-family: 'Raleway',Arial, Helvetica, sans-serif;
+
+}
+
+/* Basit Ayarlar */
+
+.container{
+width: 90%;
+margin:  0 auto;
+display: flex;
+font-display: flex;
+
+
+}
+h1{
+    font:large;
+    font-size:60px;
+    letter-spacing: normal;
+    margin-bottom: 30px;
+   
+}
+.sectionHeader{
+
+    background-color: darkblue;
+    border-bottom: 6px black;
+    height: 60px;
+    color: white;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 24px;
+    padding: 5px 40px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+
+}
+h2{
+    font-size: 16px;
+    color: white;
+}
+h3{
+font-size: 16px;
+color: blue;
+transition: all .5s ease;
+font-weight: bold;
+transition: 0.5 ease;
+
+
+}
+.sectionArea{
+padding: 80px 0;
+
+}
+
+/* Ayarlar */
+
+
+
+header .logo{
+    margin-right: auto;
+}
+
+header .logo img{
+    display: block;
+    height: 250px;
+    width: 350px;
+}
+.menu li{
+    float: left;
+    
+    
+   
+}
+.menu li a{
+    padding: 60px 60px;
+    display: block;
+    letter-spacing: 1px;
+    color:blue;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.menu li:hover a{
+    background-color:blue;
+    color: white;
+
+    
+
+
+}
+#mainSlider{
+    height: 500px;
+    background: url(../img/meydan.jpg) center center no-repeat;
+    background-size: cover ;
+}
+.slider{
+    width: 100%;
+}
+
+
+
+
+#mainCaption{
+    height: 500px;
+    background: rgba(0,0,0, .5);
+    color: whitesmoke;
+}
+
+
+
+.caption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+
+}
+.featuresBody .container,.engineBody .container{
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    
+}
+.col3{
+flex-grow: 1;
+width: 33.33%;
+
+}
+.col2{
+
+flex-grow: 1;
+width: 50%;
+
+}
+.featuresTop{
+    text-align: center;
+    
+}
+
+.item{
+    position: relative;
+    overflow: hidden;
+    display:inline-block;
+    width: 100%;
+    vertical-align: top;
+    padding: 10px 20px;
+    
+    }
+
+    
+.zoom{
+    
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    
+    
+
+}
+.zoom img{
+display:block;
+width: 100%;
+height: auto;
+transition: all .5s ease;
+
+}
+.item .itemText{
+
+    text-align: center;
+    padding: 10px 20px;
+    border: 1px solid blue;
+    line-height:initial;
+    
+
+}
+
+
+.item:hover .zoom img {
+
+
+transform: scale(1.25);
+}
+.item:hover h3{
+
+    color: white;
+}
+
+.item:hover .itemText{
+background-color: blue;
+color: white;
+transition: all .5s ease;
+
+}
+
+.btnDetails{
+    color: white;
+    padding: 5px 10 px;
+    transition: all .5s ease;
+    text-decoration:underline;
+    
+}
+.item:hoover .btnDetails{
+
+color:#fff;
+border: 1px solid #fff;
+
+
+}
+.itemText p{
+    margin: 20px 0;
+}
+#parallax{
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url('../img/isyasaminaenyakinuniversite-2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center ;
+    text-align: center;
+    color: white;
+
+    
+    
+}
+.parallax p{
+    color: #fff;
+}
+.parallaxTop{
+padding: 20px 10px;
+
+}
+.engineTop{
+    text-align: center;
+
+
+}
+.engineContainer{
+    position:relative;
+    width: 100%;
+}
+.imageOver{
+    display:block;
+    width: 100%;
+    height:auto;
+}
+.engineOverlay{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+background-color:rgba(0,0,0,.7);
+overflow: hidden;
+width: 0;
+height: 100%;
+transition: .5s ease;
+
+}
+.engineContainer:hover .engineOverlay{
+
+    width: 100%;
+
+}
+.engineText{
+white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.btnDetails2{
+    text-align: bottom;
+    color: white;
+    padding: 5px 10 px;
+    transition: all .5s ease;
+    text-decoration:underline;
+}
+.engineOverlay2{
+    position:absolute;
+    bottom: 0;
+    left: 100%;
+    right:0;
+background-color:rgba(0,0,0,.7);
+overflow: hidden;
+width: 0;
+height: 100%;
+transition: .5s ease;
+
+}
+.engineContainer:hover .engineOverlay2{
+
+    width: 100%;
+left: 0;
+}
+footer{
+    background-color:white;
+    text-align: center;
+    color: white;
+    
+}
+.footerItem{
+    padding: 20px;
+
+}
+.footerItem img{
+    height: 200px;
+    
+}
+footer h3{
+    color:blue;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 20px
+    
+    
+    
+}
+.footerLinks a{
+    text-decoration: none;
+    color: blue;
+    letter-spacing: 1px;
+   transition: 0.3s ease;
+  
+   
+   
+   
+}
+.footerLinks a:hover{
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+    transition: 0.3s ease;
+    
+}
+#aboutSlider{
+    height: 250px;
+background: url('../img/isyasaminaenyakinuniversite-2.jpg') center center no-repeat;
+background-size: cover;
+}
+#aboutCaption{
+    height: 250px;
+    background-color: rgba(0,0,0,.7);
+}
+#ourHistory{
+    background-color:white;
+}
+.ourHistoryTop{
+    text-align: center;
+}
+.ourHistoryBody .containerFluid{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+    }
+.ourHistoryBody{
+background-color:white;
+color:blue;
+}
+.ourHistoryBody .col2{
+    display: flex;
+
+}
+
+.ourHistoryDate{
+    flex: 1;
+    text-align: center;
+    background-color:blue;
+    color:white;
+}
+.ourHistoryDate p{
+    font-size: 30px;
+    letter-spacing: 1px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    
+}
+.ourHistoryImg{
+    flex:2;
+
+}
+.ourHistoryImg img{
+    width: 100%;
+    height: 100%;
+}
+.ourHistoryText{
+    flex: 3;
+    margin-left: 10px;
+
+}
+.ourHistoryText p{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 1.25;
+}
+/* İLETİŞİM KISMI */
+#contactSlider{
+    height: 250px;
+    background: url('../img2/isyasaminaenyakinuniversite-2.jpg')
+}
+#contactCaption{
+    height: 250px;
+    background: rgba(0,0,0,.7);
+
+
+}
+.contactTop{
+    text-align: center;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+    
+}
+.contactForm{
+    margin: 0 auto;
+    width: 60%;
+
+}
+.formShape{
+    color: blue;
+    float: left;
+    background:white;
+    padding: 8px;
+    width: 8%;
+    text-align: center;
+}
+.formField{
+    color:white;
+    background-color:blue;
+    border: none;
+    padding: 15.5px;
+    width: 92%;
+    display: block;
+}
+.formBtn{
+    display: block;
+    border: none;
+    background-color: blue;
+    color:white;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
